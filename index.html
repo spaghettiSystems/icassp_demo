@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Emotion Recognition Demo</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 text-gray-100 min-h-screen">
+    <div class="max-w-5xl mx-auto px-4 py-12">
+        <h1 class="text-4xl font-bold mb-8 text-center">Speech Emotion Recognition Demo</h1>
+        
+        <div class="bg-gray-800 rounded-lg p-6 mb-12 shadow-xl">
+            <h2 class="text-2xl font-semibold mb-4">Background</h2>
+            <p class="text-gray-300 leading-relaxed">
+                We present samples from our model tested on the Multilingual LibriSpeech (MLS) dataset, which primarily consists of audiobook recordings. From a random selection of 100,000 audio clips from MLS, we classified each sample and identified the top 3 samples by logit value for each emotion. These demonstrations showcase our model's ability to accurately identify emotional content even in predominantly neutral speech datasets.
+            </p>
+        </div>
+
+        <div class="grid gap-8">
+            <div class="bg-gray-800 rounded-lg p-6 shadow-xl">
+                <h2 class="text-2xl font-semibold mb-6">Demo Samples</h2>
+                
+                <div class="space-y-8">
+                    <!-- Happy -->
+                    <div class="bg-gray-700 rounded-lg p-4">
+                        <h3 class="text-xl font-medium mb-4 text-yellow-400">Happy</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2">Sample 1</p>
+                                <audio controls class="w-full" src="happy/1.wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2">Sample 2</p>
+                                <audio controls class="w-full" src="happy/2.wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2">Sample 3</p>
+                                <audio controls class="w-full" src="happy/3.wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Angry -->
+                    <div class="bg-gray-700 rounded-lg p-4">
+                        <h3 class="text-xl font-medium mb-4 text-red-400">Angry</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2">Sample 1</p>
+                                <audio controls class="w-full" src="angry/1.wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2">Sample 2</p>
+                                <audio controls class="w-full" src="angry/2.wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2">Sample 3</p>
+                                <audio controls class="w-full" src="angry/3.wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sad -->
+                    <div class="bg-gray-700 rounded-lg p-4">
+                        <h3 class="text-xl font-medium mb-4 text-blue-400">Sad</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2">Sample 1</p>
+                                <audio controls class="w-full" src="sad/1.wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2">Sample 2</p>
+                                <audio controls class="w-full" src="sad/2.wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2">Sample 3</p>
+                                <audio controls class="w-full" src="sad/3.wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Disgust -->
+                    <div class="bg-gray-700 rounded-lg p-4">
+                        <h3 class="text-xl font-medium mb-4 text-purple-400">Disgust</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2">Sample 1</p>
+                                <audio controls class="w-full" src="disgust/1.wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2">Sample 2</p>
+                                <audio controls class="w-full" src="disgust/2.wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2">Sample 3</p>
+                                <audio controls class="w-full" src="disgust/3.wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Fear -->
+                    <div class="bg-gray-700 rounded-lg p-4">
+                        <h3 class="text-xl font-medium mb-4 text-green-400">Fear</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2">Sample 1</p>
+                                <audio controls class="w-full" src="fear/1.wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2">Sample 2</p>
+                                <audio controls class="w-full" src="fear/2.wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2">Sample 3</p>
+                                <audio controls class="w-full" src="fear/3.wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Surprise -->
+                    <div class="bg-gray-700 rounded-lg p-4">
+                        <h3 class="text-xl font-medium mb-4 text-pink-400">Surprise</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2">Sample 1</p>
+                                <audio controls class="w-full" src="surprise/1.wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2">Sample 2</p>
+                                <audio controls class="w-full" src="surprise/2.wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2">Sample 3</p>
+                                <audio controls class="w-full" src="surprise/3.wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Other -->
+                    <div class="bg-gray-700 rounded-lg p-4">
+                        <h3 class="text-xl font-medium mb-4 text-indigo-400">Other</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2">Sample 1</p>
+                                <audio controls class="w-full" src="other/1.wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2">Sample 2</p>
+                                <audio controls class="w-full" src="other/2.wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2">Sample 3</p>
+                                <audio controls class="w-full" src="other/3.wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Neutral -->
+                    <div class="bg-gray-700 rounded-lg p-4">
+                        <h3 class="text-xl font-medium mb-4 text-gray-400">Neutral</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2">Sample 1</p>
+                                <audio controls class="w-full" src="neutral/1.wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2">Sample 2</p>
+                                <audio controls class="w-full" src="neutral/2.wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2">Sample 3</p>
+                                <audio controls class="w-full" src="neutral/3.wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
